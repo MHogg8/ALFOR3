@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ALFOR3</string>
+    <string name="alarm_hint">Alarm Reason</string>
 </resources>
