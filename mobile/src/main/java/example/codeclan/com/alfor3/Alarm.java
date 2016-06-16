@@ -87,7 +87,6 @@ public class Alarm extends AppCompatActivity {
                     alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 1000*60*1, pendingIntent);
                 }else{
                     alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),pendingIntent);
-                    //dave
                 }
 
 
