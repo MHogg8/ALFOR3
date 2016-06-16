@@ -5,11 +5,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-public class Alarm_Receiver extends BroadcastReceiver {
+public class AlarmReceiver extends BroadcastReceiver {
+    public AlarmReceiver(){}
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.e("Receiver", "its receiving loud and clear");
+        Log.e("AlarmReceiver", "its receiving loud and clear");
 
     }
 }

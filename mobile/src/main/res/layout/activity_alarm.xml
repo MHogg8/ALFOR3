@@ -23,21 +23,22 @@
         android:id="@+id/alarmReason"
         android:hint="@string/alarm_hint"
         android:layout_above="@+id/setAlarm"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="86dp" />
+        android:layout_centerHorizontal="true" />
 
-    <NumberPicker
+    <TimePicker
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/hourNumberPicker"
-        android:layout_marginTop="59dp"
+        android:id="@+id/timePicker"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/setAlarm" />
+        android:layout_alignParentEnd="true" />
 
-    <NumberPicker
+    <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/minuteNumberPicker"
-        android:layout_alignTop="@+id/hourNumberPicker"
-        android:layout_toEndOf="@+id/setAlarm" />
+        android:text="Repeat Daily"
+        android:id="@+id/repeatSwitch"
+        android:layout_above="@+id/alarmReason"
+        android:layout_alignEnd="@+id/alarmReason"
+        android:checked="false" />
+
 </RelativeLayout>
