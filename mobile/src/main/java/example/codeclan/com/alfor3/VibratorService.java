@@ -29,6 +29,10 @@ public class VibratorService extends Service {
         vibrateCall = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
         vibrateCall.vibrate(5000);
 
+        // I think it is probably in here that we need to set the reminder we could have a delay between the
+        // pattern of teh vibration or the pattern of the beep and then it could vibrate slash beep
+        // every 15 mins until teh alarm is canceled via the NFC.
+
         ToneGenerator tone = new ToneGenerator(AudioManager.STREAM_ALARM, 100);
         tone.startTone(ToneGenerator.TONE_DTMF_6, 30000);
 
